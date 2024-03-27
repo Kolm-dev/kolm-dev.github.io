@@ -317,7 +317,6 @@ footer {
   }
   .work {
     padding: 15px;
-    background-color: red;
     margin: 0 5px;
     display: flex;
     flex-direction: column;
