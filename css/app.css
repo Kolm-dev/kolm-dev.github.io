@@ -231,6 +231,11 @@ footer {
   max-width: 600px;
   position: relative;
   flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 .work a {
   color: #42d6e9;
@@ -251,15 +256,16 @@ footer {
   text-align: justify;
 }
 
-.work img {
+.work__image {
   max-width: 100%;
   height: auto;
+  max-height: 500px;
+  display: block;
   border-radius: 10px;
 }
 
 .work__description,
-.work img {
-  flex-basis: calc(50% - 30px);
+.work__image {
   margin: 0 15px;
 }
 
