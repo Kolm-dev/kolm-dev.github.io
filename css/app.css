@@ -61,7 +61,7 @@
     margin-bottom: 10px;
   }
   .list__item {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 .welcome {
@@ -84,8 +84,8 @@
   font-size: 24px;
 }
 .welcome .welcome__description {
-  font-size: 16px;
   margin-top: 5px;
+  font-size: 18px;
 }
 
 @media screen and (max-width: 440px) {
@@ -105,19 +105,18 @@
     font-size: 18px !important;
   }
   .welcome__description {
-    font-size: 12px !important;
+    font-size: 15px !important;
   }
   img {
     margin-top: 10px;
   }
 }
 .about {
-  margin: 0 auto;
   padding: 25px;
-  margin-top: 50px;
   border-radius: 20px;
   border: 1px solid #fff;
   max-width: 600px;
+  margin: 5px auto;
 }
 .about .technology {
   color: #50f098;
@@ -127,20 +126,11 @@
   text-align: justify;
 }
 
-@media screen and (min-width: 420px) and (max-width: 620px) {
-  body {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
+@media screen and (min-width: 320px) and (max-width: 620px) {
   .about {
-    margin: 5px auto;
+    margin: 10px;
+    margin-top: 20px;
     padding: 15px;
-  }
-  .about p {
-    font-size: 16px;
   }
 }
 footer {
@@ -220,8 +210,11 @@ footer {
     flex-direction: column;
   }
 }
+.works__description {
+  font-size: 18px;
+}
+
 .work {
-  margin: 0 auto;
   padding: 25px;
   border-radius: 20px;
   border: 1px solid #fff;
@@ -233,6 +226,9 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 15px;
+  font-size: 16px;
+  margin: 0 auto;
+  background-color: #0d0d0d;
 }
 .work a {
   color: #42d6e9;
@@ -244,21 +240,22 @@ footer {
 .work__title {
   flex-basis: 100%;
   text-align: center;
-  color: #fe4c00;
+  font-size: 20px;
 }
 
 .work__description {
   display: block;
   margin: 10px 0;
-  text-align: justify;
+  text-align: center;
 }
 
 .work__image {
   max-width: 100%;
   height: auto;
-  max-height: 500px;
+  max-height: 400px;
   display: block;
-  border-radius: 10px;
+  border-radius: 15px;
+  margin: 0 auto;
 }
 
 .work__description,
@@ -270,7 +267,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 50px;
+  padding: 0 30px;
 }
 
 .work__next,
@@ -309,7 +306,7 @@ footer {
 
 .technology {
   font-weight: bold;
-  color: #50f098;
+  color: #eb0909;
 }
 
 @media screen and (max-width: 500px) {
@@ -317,6 +314,12 @@ footer {
     padding: 0;
     margin: 0;
     font-size: 14px;
+  }
+  .works__title {
+    font-size: 18px;
+  }
+  .works__description {
+    font-size: 15px;
   }
   .work {
     padding: 15px;
@@ -341,7 +344,11 @@ footer {
     width: 30px;
     height: 30px;
     background-size: 30px;
-    top: 25px;
+    top: 30px;
+  }
+  .work .work__next:hover,
+  .work .work__prev:hover {
+    transform: scale(1.1) translateY(-50%);
   }
   .work .work__next {
     right: 20px;
