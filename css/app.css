@@ -258,11 +258,6 @@ footer {
   margin: 0 auto;
 }
 
-.work__description,
-.work__image {
-  margin: 0 15px;
-}
-
 .work__slider {
   display: flex;
   align-items: center;
